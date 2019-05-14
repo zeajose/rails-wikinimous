@@ -1,0 +1,9 @@
+
+
+
+<div class="border-bottom pb-4 pt-4 content">
+  <% @articles.each do |article| %>
+  <h2 id="titles"><%= link_to article.title, article_path(article.id)  %></h2>
+  <p><%= article.content %></p>
+  <% end %>
+</div>
